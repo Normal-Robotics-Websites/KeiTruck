@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #f1f0e8;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #c5a059;
+  color: #f1f0e8;
+}
+
+/* Hairline divider — soft warm etch */
+.hairline {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(26, 26, 26, 0.14),
+    transparent
+  );
+}
+
+.hairline-v {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(26, 26, 26, 0.14),
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
