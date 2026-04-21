@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { asset } from "@/lib/assetPath";
 
 const phases = [
   {
@@ -84,29 +85,29 @@ export default function BuildProcess() {
         `}</style>
         <div className="scroll-container">
           <div className="scroll-item">
-            <Image src="/scroll3.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll3.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll4.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll4.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll1.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll1.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll2.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll2.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           {/* Duplicate for seamless loop */}
           <div className="scroll-item">
-            <Image src="/scroll3.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll3.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll4.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll4.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll1.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll1.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className="scroll-item">
-            <Image src="/scroll2.png" alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
+            <Image src={asset("/scroll2.png")} alt="scroll" width={1920} height={1080} style={{ width: '100%', height: 'auto' }} />
           </div>
         </div>
       </div>

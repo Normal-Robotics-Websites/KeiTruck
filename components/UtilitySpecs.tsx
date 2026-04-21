@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Reveal from "./Reveal";
 import ErrorBoundary from "./ErrorBoundary";
+import { asset } from "@/lib/assetPath";
 
 const TruckModelViewer = dynamic(() => import("./TruckModelViewer"), {
   ssr: false,
@@ -20,37 +21,37 @@ const luxuryFeatures = [
     n: "01",
     title: "High-Powered Charging",
     body: "DC fast charging at 50 kW via CCS1 and AC Level 2 at 11.5 kW via J1772 ensure your truck is ready when you are. Recharge to 80% in just 40 minutes.",
-    image: "/1charging.png",
+    image: asset("/1charging.png"),
   },
   {
     n: "02",
     title: "Three 120V Outlets",
     body: "Pure sine-wave power delivers clean, stable energy. Run a chop saw, inverter welder, and espresso machine simultaneously. 30A continuous draw with thermal headroom for all-day work.",
-    image: "/2outlets.png",
+    image: asset("/2outlets.png"),
   },
   {
     n: "03",
     title: "Comfortable Cab",
     body: "Two premium seats designed for both daily driving and extended workdays. Climate control and ergonomic support make every journey as refined as the engineering.",
-    image: "/3seats.png",
+    image: asset("/3seats.png"),
   },
   {
     n: "04",
     title: "214 Horsepower Electric Motor",
     body: "Instant torque delivery from zero RPM provides the responsive performance of a finely-tuned sports car. A single-speed reduction drive maximizes efficiency without compromise.",
-    image: "/4motor.png",
+    image: asset("/4motor.png"),
   },
   {
     n: "05",
     title: "400W Solar Array",
     body: "Roof-mounted monocrystalline panels generate clean energy continuously. Recharge while you work, ensuring your power station never runs dry.",
-    image: "/5solar.png",
+    image: asset("/5solar.png"),
   },
   {
     n: "06",
     title: "28.8 kWh Lithium-Ion Battery",
     body: "Advanced battery chemistry with active liquid thermal management delivers 260 miles of range on a single charge. Choose between NMC and LFP for your specific needs.",
-    image: "/6battery.png",
+    image: asset("/6battery.png"),
   },
 ];
 

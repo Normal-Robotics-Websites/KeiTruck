@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { asset } from "@/lib/assetPath";
 
 const metrics = [
   { value: "260", unit: "mi", label: "Range" },
@@ -23,7 +24,7 @@ export default function Vision() {
           <Reveal delay={0.1} className="lg:col-span-5">
             <div className="relative h-[500px] overflow-hidden rounded-lg">
               <Image
-                src="/KeiTruck1.png"
+                src={asset("/KeiTruck1.png")}
                 alt="Craftsman working alongside a solar-powered Kei truck"
                 width={1200}
                 height={900}
