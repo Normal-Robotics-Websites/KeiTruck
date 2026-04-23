@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/KeiTruck" : "";
+const basePath = "";
 
 const nextConfig = {
   reactStrictMode: true,
   basePath,
-  assetPrefix: isProd ? "/KeiTruck/" : "",
+  assetPrefix: "",
   output: "export",
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
